@@ -38,29 +38,56 @@
     </section>
 
     <section class="card section">
-      <h2>Overview</h2>
+    <h2>Overview</h2>
       <p>
-        SASHIMI is a reproducible analytics framework for AI-segmented histopathology images.
-        The project processes and validates biomedical data at scale, constructs spatial feature tables,
-        and evaluates clinical relevance through survival analysis.
+      SASHIMI is a reproducible analytical framework for AI-segmented 
+      histopathology images. The platform processes segmentation-derived 
+      cell coordinates as marked point pattern data and systematically 
+      constructs spatial feature tables that quantify cellular organization 
+      within the tumor microenvironment (TME).
       </p>
-    </section>
 
-    <section class="card section">
-      <h2>What Was Implemented</h2>
       <p>
-        The pipeline automates data processing in Python and R, runs batch-level quality checks,
-        and benchmarks methods for stability and sensitivity across cohorts and parameter settings.
-        Downstream statistical modeling includes Kaplan-Meier estimation and Cox proportional hazards analysis,
-        producing interpretable summaries such as hazard ratios and log-rank statistics.
+      It integrates spatial statistics, topological data analysis, and 
+      areal similarity indices to provide both scalar feature outputs 
+      and functional visualizations of intercellular spatial interactions. 
+      Designed as a user-friendly web application, SASHIMI enables 
+      real-time exploratory spatial analysis without requiring extensive 
+      computational infrastructure or external package installation.
       </p>
     </section>
+    <section class="card section">
+  <h2>
+    "Spatial Analysis for AI-segmented Histopathology Images: Methods and Implementation"
+  </h2>
+
+  <p>
+    <strong>Yoolkyu Park</strong>, Fangjiang Wu, Xin Feng, Shengjie Yang, 
+    Elizabeth H. Wang, Bo Yao, Chul Moon, Guanghua Xiao, and Qiwei Li
+  </p>
+
+  <p>
+    In this paper, we systematically organize and implement 27 spatial descriptors, 
+    including classical spatial summary statistics, areal similarity indices, 
+    and topological features for marked point pattern data derived from 
+    AI-segmented histopathology images. 
+  </p>
+
+  <p>
+    We further conduct survival analyses on two real-world datasets 
+    (NLST and OPMD) using functional Cox proportional hazards (FCoxPH) models 
+    to investigate the relationship between spatial architectural features 
+    and patient survival outcomes.
+  </p>
+
+  <p>
+    The manuscript is available on arXiv at the link below.
+  </p>
+</section>
 
     <section class="card section">
       <h2>Resources</h2>
       <p><strong>Publication (arXiv):</strong> <a href="https://arxiv.org/abs/2512.06116" target="_blank" rel="noreferrer">arxiv.org/abs/2512.06116</a></p>
-      <p><strong>Project Website:</strong> <a href="https://lce.biohpc.swmed.edu/sashimi/" target="_blank" rel="noreferrer">lce.biohpc.swmed.edu/sashimi</a></p>
-      <p><strong>Poster PDF:</strong> <a href="figures/ISBA_SASHIMI_Yoolkyu_Park.pdf" target="_blank" rel="noreferrer">ISBA_SASHIMI_Yoolkyu_Park.pdf</a></p>
       <p><strong>Git Repository:</strong> <a href="https://github.com/hangookminsokchon/SASHIMI" target="_blank" rel="noreferrer">github.com/hangookminsokchon/SASHIMI</a></p>
     </section>
 

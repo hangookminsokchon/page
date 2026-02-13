@@ -1,1 +1,4 @@
 .DS_Store
+
+# Private docs
+figures/*transcript*.pdf

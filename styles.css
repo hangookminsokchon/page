@@ -248,6 +248,38 @@ button:focus-visible {
   background: linear-gradient(180deg, var(--surface-2), var(--surface));
 }
 
+/* New index hero layout */
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: var(--sp-6);
+  padding: var(--sp-6);
+  align-items: stretch;
+}
+
+.hero-main {
+  min-width: 0;
+}
+
+.hero-visual {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--surface-2) 82%, transparent);
+  display: grid;
+  place-items: center;
+  padding: var(--sp-4);
+  min-height: 280px;
+  color: color-mix(in srgb, var(--accent) 72%, var(--text));
+}
+
+.hero-diagram {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  opacity: 0.6;
+}
+
+/* Backward-compatible class for other pages if present */
 .hero-content {
   padding: var(--sp-6);
   display: grid;
@@ -257,11 +289,12 @@ button:focus-visible {
 }
 
 .hero-avatar {
-  width: 150px;
-  height: 150px;
+  width: 146px;
+  height: 146px;
   border-radius: var(--radius-md);
   object-fit: cover;
   border: 1px solid var(--border);
+  margin-bottom: var(--sp-3);
 }
 
 .hero h1 {
@@ -387,14 +420,21 @@ button:focus-visible {
   gap: var(--sp-4);
 }
 
-.project-card {
-  display: block;
+.project-card,
+.research-card {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
+  background: var(--surface-2);
+  padding: var(--sp-4);
+}
+
+.project-card {
+  display: block;
   overflow: hidden;
   background: var(--surface);
   color: var(--text);
   transition: border-color var(--transition), transform var(--transition);
+  padding: 0;
 }
 
 .project-card:hover {
@@ -593,9 +633,19 @@ button:focus-visible {
   letter-spacing: 0.1px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   .topbar-inner {
     align-items: flex-start;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    padding: var(--sp-5);
+    gap: var(--sp-4);
+  }
+
+  .hero-visual {
+    min-height: 220px;
   }
 
   .hero-content {
@@ -629,5 +679,84 @@ button:focus-visible {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Applied redesign layer across all pages */
+.page > .card.section {
+  border-radius: 18px;
+}
+
+.page > .section-head {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.4rem, 2.4vw, 2.1rem) clamp(1.25rem, 2.5vw, 2.1rem);
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--surface) 78%, var(--surface-2) 22%) 0%,
+    var(--surface) 58%,
+    color-mix(in srgb, var(--surface-2) 70%, transparent) 100%
+  );
+}
+
+.page > .section-head::before {
+  content: "";
+  position: absolute;
+  right: clamp(14px, 2.6vw, 28px);
+  top: clamp(12px, 2.2vw, 24px);
+  width: clamp(150px, 18vw, 220px);
+  height: clamp(150px, 18vw, 220px);
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'%3E%3Cg fill='%231f4a73'%3E%3Ccircle cx='32' cy='34' r='2.2'/%3E%3Ccircle cx='58' cy='52' r='1.9'/%3E%3Ccircle cx='86' cy='66' r='2'/%3E%3Ccircle cx='116' cy='84' r='1.8'/%3E%3Ccircle cx='148' cy='102' r='2'/%3E%3Ccircle cx='180' cy='124' r='2.1'/%3E%3Ccircle cx='72' cy='130' r='1.8'/%3E%3Ccircle cx='104' cy='148' r='1.9'/%3E%3Ccircle cx='136' cy='168' r='1.8'/%3E%3Ccircle cx='166' cy='186' r='2'/%3E%3C/g%3E%3Cg stroke='%231f4a73' stroke-width='.8' fill='none'%3E%3Cpath d='M32 34 L58 52 L86 66 L116 84 L148 102 L180 124'/%3E%3Cpath d='M72 130 L104 148 L136 168 L166 186'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.page > .section-head > * {
+  position: relative;
+  z-index: 1;
+}
+
+.page > .section-head h1 {
+  font-size: clamp(1.95rem, 3.4vw, 2.7rem);
+  line-height: 1.1;
+  margin-bottom: var(--sp-3);
+}
+
+.page > .section-head h1::after {
+  width: 132px;
+}
+
+.page > .section-head p {
+  max-width: 72ch;
+}
+
+.page > .section-head .project-grid {
+  margin-top: var(--sp-4);
+}
+
+.page > .section:not(.section-head) {
+  background: var(--surface);
+}
+
+.page > .section h3 + .entry-meta,
+.page > .section h3 + p {
+  margin-top: 0.15rem;
+}
+
+.course-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--surface-2) 65%, transparent);
+}
+
+.course-table tbody tr:hover {
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+}
+
+@media (max-width: 980px) {
+  .page > .section-head::before {
+    width: 132px;
+    height: 132px;
+    opacity: 0.04;
   }
 }

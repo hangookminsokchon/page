@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoolkyu Park | Home</title>
   <meta name="description" content="Yoolkyu Park academic profile and CV website.">
-  <link rel="stylesheet" href="styles.css?v=3387657">
+  <link rel="stylesheet" href="styles.css?v=20260304a">
 </head>
 <body>
   <header class="topbar">
@@ -26,26 +26,27 @@
 
   <main class="container page">
     <section class="hero card">
-      <div class="hero-content">
-        <img class="hero-avatar" src="image/profilepic.jpeg" alt="Profile photo of Yoolkyu Park">
-        <div>
+      <div class="hero-layout">
+        <div class="hero-main">
+          <img class="hero-avatar" src="image/profilepic.jpeg" alt="Profile photo of Yoolkyu Park">
           <h1>Yoolkyu Park</h1>
+
           <p class="muted">
-            My research focuses on developing mathematical and statistical frameworks 
-            for analyzing complex spatial structures in biomedical imaging data. 
-            In particular, I study spatial point processes and topological data analysis (TDA) 
+            My research focuses on developing mathematical and statistical frameworks
+            for analyzing complex spatial structures in biomedical imaging data.
+            In particular, I study spatial point processes and topological data analysis (TDA)
             to model cellular organization in high-resolution histopathology images.
           </p>
 
           <p class="muted">
-            I am interested in bridging rigorous theory with real-world biomedical applications, 
-            especially through scalable computational implementations that enable reproducible 
+            I am interested in bridging rigorous theory with real-world biomedical applications,
+            especially through scalable computational implementations that enable reproducible
             spatial biomarker discovery.
           </p>
 
           <p class="muted">
-            I am a rising senior at the University of North Carolina at Chapel Hill, 
-            pursuing a double major in Mathematics and Statistics & Analytics. 
+            I am a rising senior at the University of North Carolina at Chapel Hill,
+            pursuing a double major in Mathematics and Statistics & Analytics.
             I plan to pursue a PhD beginning in Fall 2027
             and welcome opportunities to collaborate with research groups in spatial statistics,
             topological data analysis, or computational biology.
@@ -66,6 +67,35 @@
             <a class="btn btn-light" href="figures/Yoolkyu_Park_Resume_30%20(5).pdf" target="_blank" rel="noreferrer">Open CV (PDF)</a>
           </div>
         </div>
+
+        <aside class="hero-visual" aria-hidden="true">
+          <svg class="hero-diagram" viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="presentation">
+            <rect x="0" y="0" width="360" height="260" fill="none"/>
+            <g stroke="currentColor" stroke-width="1" opacity="0.35" fill="none">
+              <line x1="36" y1="222" x2="324" y2="222"/>
+              <line x1="36" y1="34" x2="36" y2="222"/>
+              <polyline points="52,198 88,176 118,150 146,132 178,110 212,92 248,78 286,60"/>
+              <polyline points="70,204 98,186 132,162 166,146 198,126 232,110 268,92" opacity="0.6"/>
+            </g>
+            <g fill="currentColor" opacity="0.7">
+              <circle cx="52" cy="198" r="3"/>
+              <circle cx="88" cy="176" r="3"/>
+              <circle cx="118" cy="150" r="3"/>
+              <circle cx="146" cy="132" r="3"/>
+              <circle cx="178" cy="110" r="3"/>
+              <circle cx="212" cy="92" r="3"/>
+              <circle cx="248" cy="78" r="3"/>
+              <circle cx="286" cy="60" r="3"/>
+              <circle cx="70" cy="204" r="2.6"/>
+              <circle cx="98" cy="186" r="2.6"/>
+              <circle cx="132" cy="162" r="2.6"/>
+              <circle cx="166" cy="146" r="2.6"/>
+              <circle cx="198" cy="126" r="2.6"/>
+              <circle cx="232" cy="110" r="2.6"/>
+              <circle cx="268" cy="92" r="2.6"/>
+            </g>
+          </svg>
+        </aside>
       </div>
     </section>
 
@@ -84,11 +114,19 @@
 
     <section class="card section">
       <h2>SASHIMI (Brief Intro)</h2>
-      <p>
-        First-author project on spatial analysis for AI-segmented histopathology images, with reproducible Python/R workflows,
-        large-scale feature extraction (37.5M+ observations), and survival analysis using Kaplan-Meier and Cox models.
-      </p>
-      <p><a href="projects.html">Open project page</a></p>
+      <article class="research-card">
+        <h3>SASHIMI</h3>
+        <p>
+          First-author project on spatial analysis for AI-segmented histopathology images, with reproducible Python/R workflows,
+          large-scale feature extraction (37.5M+ observations), and survival analysis using Kaplan-Meier and Cox models.
+        </p>
+        <div class="research-tags">
+          <span class="tag">Spatial Stats</span>
+          <span class="tag">TDA</span>
+          <span class="tag">Survival Analysis</span>
+        </div>
+        <p><a href="projects.html">Open project page</a></p>
+      </article>
     </section>
 
     <section class="card section">

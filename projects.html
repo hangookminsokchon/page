@@ -5,51 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoolkyu Park | Projects</title>
   <meta name="description" content="Projects by Yoolkyu Park.">
-  <link rel="stylesheet" href="styles.css?v=20260304a">
+  <link rel="stylesheet" href="styles.css?v=20260304b">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html">Yoolkyu Park</a>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="education.html">Education</a>
-        <a href="projects.html">Projects</a>
-        <a href="experience.html">Experience</a>
-        <a href="publications.html">Publications</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
-    </div>
-  </header>
-
-  <main class="container page">
-    <section class="card section section-head">
-      <h1>Projects</h1>
-      <p class="muted">This page is a project hub. New projects can be added as cards here over time.</p>
-
-      <div class="project-grid">
-        <a class="project-card" href="sashimi.html" aria-label="Open SASHIMI project page">
-          <img src="image/SASHIMI_banner.png" alt="SASHIMI project icon" class="project-icon">
-          <div class="project-body">
-            <h2>SASHIMI</h2>
-            <p>Spatial Analysis for Segmented Histopathology Images using Machine Intelligence.</p>
-            <div class="research-tags">
-              <span class="tag">Spatial Stats</span>
-              <span class="tag">TDA</span>
-              <span class="tag">Histopathology</span>
-            </div>
-            <span class="project-link">Open project details</span>
-          </div>
-        </a>
+  <div class="site-shell">
+    <aside class="site-sidebar">
+      <div class="sidebar-inner">
+        <a class="brand" href="index.html">Yoolkyu Park</a>
+        <p class="sidebar-note">Mathematics and statistics researcher focused on spatial data, TDA, and biomedical applications.</p>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="education.html">Education</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="publications.html">Publications</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
+        <p class="sidebar-links">
+          <a href="https://www.linkedin.com/in/yoolkyu-park" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>•</span>
+          <a href="https://scholar.google.com/citations?hl=en&user=rlyJIfoAAAAJ&view_op=list_works&gmla=APjjwubZ8yR3JwVrAo_-EMfwaXQq0bBYu6ENwT19dNVaNNSmqeJJqrjmWHCmVH9VZk1mnb243-nTI5PZDmgysXdQ9e6km1XP6Ql49jdVrvwn3ads0LioSpOPpIcv" target="_blank" rel="noreferrer">Google Scholar</a>
+          <span>•</span>
+          <a href="https://github.com/hangookminsokchon" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
       </div>
-    </section>
-  </main>
+    </aside>
 
-  <footer class="container footer">
-    <p>© <span id="year"></span> Yoolkyu Park</p>
-  </footer>
+    <main class="site-main">
+      <section class="panel page-hero">
+        <h1>Projects</h1>
+        <p>This page is a project hub. New projects can be added as cards here over time.</p>
+      </section>
+
+      <section class="panel section">
+        <div class="project-grid">
+          <a class="project-card" href="sashimi.html" aria-label="Open SASHIMI project page">
+            <img src="image/SASHIMI_banner.png" alt="SASHIMI project icon" class="project-icon">
+            <div class="project-body">
+              <h2>SASHIMI</h2>
+              <p>Spatial Analysis for Segmented Histopathology Images using Machine Intelligence.</p>
+              <div class="research-tags">
+                <span class="tag">Spatial Stats</span>
+                <span class="tag">TDA</span>
+                <span class="tag">Histopathology</span>
+              </div>
+              <span class="project-link">Open project details</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Yoolkyu Park</p>
+      </footer>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>

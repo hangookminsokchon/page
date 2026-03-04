@@ -4,38 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoolkyu Park | Skills</title>
-  <link rel="stylesheet" href="styles.css?v=20260304a">
+  <link rel="stylesheet" href="styles.css?v=20260304b">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html">Yoolkyu Park</a>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="education.html">Education</a>
-        <a href="projects.html">Projects</a>
-        <a href="experience.html">Experience</a>
-        <a href="publications.html">Publications</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
-    </div>
-  </header>
+  <div class="site-shell">
+    <aside class="site-sidebar">
+      <div class="sidebar-inner">
+        <a class="brand" href="index.html">Yoolkyu Park</a>
+        <p class="sidebar-note">Mathematics and statistics researcher focused on spatial data, TDA, and biomedical applications.</p>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="education.html">Education</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="publications.html">Publications</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
+        <p class="sidebar-links">
+          <a href="https://www.linkedin.com/in/yoolkyu-park" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>•</span>
+          <a href="https://scholar.google.com/citations?hl=en&user=rlyJIfoAAAAJ&view_op=list_works&gmla=APjjwubZ8yR3JwVrAo_-EMfwaXQq0bBYu6ENwT19dNVaNNSmqeJJqrjmWHCmVH9VZk1mnb243-nTI5PZDmgysXdQ9e6km1XP6Ql49jdVrvwn3ads0LioSpOPpIcv" target="_blank" rel="noreferrer">Google Scholar</a>
+          <span>•</span>
+          <a href="https://github.com/hangookminsokchon" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </div>
+    </aside>
 
-  <main class="container page">
-    <section class="card section section-head">
-      <h1>Technical Skills</h1>
-      <p><strong>Programming:</strong> Python, R, SQL</p>
-      <p><strong>Statistical Modeling:</strong> Survival analysis (Cox), functional PCA, high-dimensional statistics</p>
-      <p><strong>Data & Automation:</strong> Reproducible workflows, batch processing, data validation</p>
-      <p><strong>Tools:</strong> NumPy, Pandas, SciPy, scikit-learn, Matplotlib, Git/GitHub</p>
-    </section>
-  </main>
+    <main class="site-main">
+      <section class="panel page-hero">
+        <h1>Technical Skills</h1>
+        <p>Programming, statistical methods, and practical tooling used in research and analysis workflows.</p>
+      </section>
 
-  <footer class="container footer">
-    <p>© <span id="year"></span> Yoolkyu Park</p>
-  </footer>
+      <section class="panel section">
+        <p><strong>Programming:</strong> Python, R, SQL</p>
+        <p><strong>Statistical Modeling:</strong> Survival analysis (Cox), functional PCA, high-dimensional statistics</p>
+        <p><strong>Data &amp; Automation:</strong> Reproducible workflows, batch processing, data validation</p>
+        <p><strong>Tools:</strong> NumPy, Pandas, SciPy, scikit-learn, Matplotlib, Git/GitHub</p>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Yoolkyu Park</p>
+      </footer>
+    </main>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

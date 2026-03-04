@@ -5,103 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoolkyu Park | SASHIMI</title>
   <meta name="description" content="SASHIMI project by Yoolkyu Park.">
-  <link rel="stylesheet" href="styles.css?v=20260304a">
+  <link rel="stylesheet" href="styles.css?v=20260304b">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html">Yoolkyu Park</a>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="education.html">Education</a>
-        <a href="projects.html">Projects</a>
-        <a href="experience.html">Experience</a>
-        <a href="publications.html">Publications</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
-    </div>
-  </header>
-
-  <main class="container page">
-    <section class="project-hero card" style="background-image: linear-gradient(120deg, rgba(17,24,39,0.72), rgba(15,118,110,0.62)), url('image/SASHIMI_banner.png');">
-      <div class="project-hero-inner">
-        <p class="project-tag">Featured Project</p>
-        <h1>SASHIMI</h1>
-        <p class="project-subtitle">Spatial Analysis for Segmented Histopathology Images using Machine Intelligence</p>
-        <div class="cta-row">
-          <a class="btn" href="https://lce.biohpc.swmed.edu/sashimi/" target="_blank" rel="noreferrer">Web Implementation</a>
-          <a class="btn btn-light" href="figures/ISBA_SASHIMI_Yoolkyu_Park.pdf" target="_blank" rel="noreferrer">Open Poster (PDF)</a>
-        </div>
+  <div class="site-shell">
+    <aside class="site-sidebar">
+      <div class="sidebar-inner">
+        <a class="brand" href="index.html">Yoolkyu Park</a>
+        <p class="sidebar-note">Mathematics and statistics researcher focused on spatial data, TDA, and biomedical applications.</p>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="education.html">Education</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="publications.html">Publications</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
+        <p class="sidebar-links">
+          <a href="https://www.linkedin.com/in/yoolkyu-park" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>•</span>
+          <a href="https://scholar.google.com/citations?hl=en&user=rlyJIfoAAAAJ&view_op=list_works&gmla=APjjwubZ8yR3JwVrAo_-EMfwaXQq0bBYu6ENwT19dNVaNNSmqeJJqrjmWHCmVH9VZk1mnb243-nTI5PZDmgysXdQ9e6km1XP6Ql49jdVrvwn3ads0LioSpOPpIcv" target="_blank" rel="noreferrer">Google Scholar</a>
+          <span>•</span>
+          <a href="https://github.com/hangookminsokchon" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
       </div>
-    </section>
+    </aside>
 
-    <section class="card section">
-    <h2>Overview</h2>
-      <p>
-      SASHIMI is a reproducible analytical framework for AI-segmented 
-      histopathology images. The platform processes segmentation-derived 
-      cell coordinates as marked point pattern data and systematically 
-      constructs spatial feature tables that quantify cellular organization 
-      within the tumor microenvironment (TME).
-      </p>
+    <main class="site-main">
+      <section class="panel project-hero" style="background-image: linear-gradient(120deg, rgba(12, 21, 36, 0.8), rgba(23, 74, 112, 0.58)), url('image/SASHIMI_banner.png');">
+        <div class="project-hero-inner">
+          <p class="project-tag">Featured Project</p>
+          <h1>SASHIMI</h1>
+          <p class="project-subtitle">Spatial Analysis for Segmented Histopathology Images using Machine Intelligence</p>
+          <div class="cta-row">
+            <a class="btn" href="https://lce.biohpc.swmed.edu/sashimi/" target="_blank" rel="noreferrer">Web Implementation</a>
+            <a class="btn btn-soft" href="figures/ISBA_SASHIMI_Yoolkyu_Park.pdf" target="_blank" rel="noreferrer">Open Poster (PDF)</a>
+          </div>
+        </div>
+      </section>
 
-      <p>
-      It integrates spatial statistics, topological data analysis, and 
-      areal similarity indices to provide both scalar feature outputs 
-      and functional visualizations of intercellular spatial interactions. 
-      Designed as a user-friendly web application, SASHIMI enables 
-      real-time exploratory spatial analysis without requiring extensive 
-      computational infrastructure or external package installation.
-      </p>
-    </section>
-    <section class="card section">
-  <h2>
-    "Spatial Analysis for AI-segmented Histopathology Images: Methods and Implementation"
-  </h2>
+      <section class="panel section">
+        <h2>Overview</h2>
+        <p>
+          SASHIMI is a reproducible analytical framework for AI-segmented
+          histopathology images. The platform processes segmentation-derived
+          cell coordinates as marked point pattern data and systematically
+          constructs spatial feature tables that quantify cellular organization
+          within the tumor microenvironment (TME).
+        </p>
 
-  <p>
-    <strong>Yoolkyu Park</strong>, Fangjiang Wu, Xin Feng, Shengjie Yang, 
-    Elizabeth H. Wang, Bo Yao, Chul Moon, Guanghua Xiao, and Qiwei Li
-  </p>
+        <p>
+          It integrates spatial statistics, topological data analysis, and
+          areal similarity indices to provide both scalar feature outputs
+          and functional visualizations of intercellular spatial interactions.
+          Designed as a user-friendly web application, SASHIMI enables
+          real-time exploratory spatial analysis without requiring extensive
+          computational infrastructure or external package installation.
+        </p>
+      </section>
 
-  <p>
-    In this paper, we systematically organize and implement 27 spatial descriptors, 
-    including classical spatial summary statistics, areal similarity indices, 
-    and topological features for marked point pattern data derived from 
-    AI-segmented histopathology images. 
-  </p>
+      <section class="panel section">
+        <h2>"Spatial Analysis for AI-segmented Histopathology Images: Methods and Implementation"</h2>
 
-  <p>
-    We further conduct survival analyses on two real-world datasets 
-    (NLST and OPMD) using functional Cox proportional hazards (FCoxPH) models 
-    to investigate the relationship between spatial architectural features 
-    and patient survival outcomes.
-  </p>
+        <p>
+          <strong>Yoolkyu Park</strong>, Fangjiang Wu, Xin Feng, Shengjie Yang,
+          Elizabeth H. Wang, Bo Yao, Chul Moon, Guanghua Xiao, and Qiwei Li
+        </p>
 
-  <p>
-    The manuscript is available on arXiv at the link below.
-  </p>
-</section>
+        <p>
+          In this paper, we systematically organize and implement 27 spatial descriptors,
+          including classical spatial summary statistics, areal similarity indices,
+          and topological features for marked point pattern data derived from
+          AI-segmented histopathology images.
+        </p>
 
-    <section class="card section">
-      <h2>Resources</h2>
-      <p><strong>Publication (arXiv):</strong> <a href="https://arxiv.org/abs/2512.06116" target="_blank" rel="noreferrer">arxiv.org/abs/2512.06116</a></p>
-      <p><strong>Git Repository:</strong> <a href="https://github.com/hangookminsokchon/SASHIMI" target="_blank" rel="noreferrer">github.com/hangookminsokchon/SASHIMI</a></p>
-    </section>
+        <p>
+          We further conduct survival analyses on two real-world datasets
+          (NLST and OPMD) using functional Cox proportional hazards (FCoxPH) models
+          to investigate the relationship between spatial architectural features
+          and patient survival outcomes.
+        </p>
 
-    <section class="card section">
-      <h2>Poster Preview</h2>
-      <object class="pdf-view" data="figures/ISBA_SASHIMI_Yoolkyu_Park.pdf" type="application/pdf">
-        <p>Poster preview is unavailable in this browser. <a href="figures/ISBA_SASHIMI_Yoolkyu_Park.pdf" target="_blank" rel="noreferrer">Open the PDF directly</a>.</p>
-      </object>
-    </section>
-  </main>
+        <p>
+          The manuscript is available on arXiv at the link below.
+        </p>
+      </section>
 
-  <footer class="container footer">
-    <p>© <span id="year"></span> Yoolkyu Park</p>
-  </footer>
+      <section class="panel section">
+        <h2>Resources</h2>
+        <p><strong>Publication (arXiv):</strong> <a href="https://arxiv.org/abs/2512.06116" target="_blank" rel="noreferrer">arxiv.org/abs/2512.06116</a></p>
+        <p><strong>Git Repository:</strong> <a href="https://github.com/hangookminsokchon/SASHIMI" target="_blank" rel="noreferrer">github.com/hangookminsokchon/SASHIMI</a></p>
+      </section>
+
+      <section class="panel section">
+        <h2>Poster Preview</h2>
+        <object class="pdf-view" data="figures/ISBA_SASHIMI_Yoolkyu_Park.pdf" type="application/pdf">
+          <p>Poster preview is unavailable in this browser. <a href="figures/ISBA_SASHIMI_Yoolkyu_Park.pdf" target="_blank" rel="noreferrer">Open the PDF directly</a>.</p>
+        </object>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Yoolkyu Park</p>
+      </footer>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>

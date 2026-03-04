@@ -2,21 +2,21 @@
   color-scheme: light dark;
 
   /* Light mode: black + cream + white */
-  --bg: #fbf6ea;
-  --paper: #fffefb;
-  --paper-alt: #fdf6e8;
+  --bg: #fefbf3;
+  --paper: #fffefc;
+  --paper-alt: #fef9ef;
   --text: #0f0f0f;
   --muted: #4a463f;
-  --border: #d7cfc0;
+  --border: #e5ddcd;
   --accent: #111111;
   --accent-soft: #2d2d2d;
   --link: #101010;
   --link-hover: #000000;
 
   /* Typography */
-  --font-heading: "Proxima Nova", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-body: "Proxima Nova", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-ui: "Proxima Nova", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Avenir Next", "Avenir", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Avenir Next", "Avenir", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-ui: "Avenir Next", "Avenir", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
   --text-xs: 0.82rem;
   --text-sm: 0.93rem;
@@ -132,7 +132,7 @@ button:focus-visible {
   font-family: var(--font-heading);
   font-size: 1.72rem;
   font-weight: 700;
-  font-style: italic;
+  font-style: normal;
   line-height: 1;
   color: var(--text);
   text-decoration: none;
@@ -235,7 +235,7 @@ button:focus-visible {
   margin: 0;
   font-family: var(--font-heading);
   font-size: var(--text-2xl);
-  font-style: italic;
+  font-style: normal;
   line-height: 1.06;
 }
 
@@ -339,7 +339,7 @@ button:focus-visible {
   margin: 0 0 var(--sp-3);
   font-family: var(--font-heading);
   font-size: var(--text-xl);
-  font-style: italic;
+  font-style: normal;
   line-height: 1.2;
 }
 
@@ -357,7 +357,7 @@ button:focus-visible {
   margin: 0;
   font-family: var(--font-heading);
   font-size: var(--text-lg);
-  font-style: italic;
+  font-style: normal;
   line-height: 1.26;
 }
 

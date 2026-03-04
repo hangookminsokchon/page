@@ -2,9 +2,9 @@
   color-scheme: light dark;
 
   /* Light mode: black + cream + white */
-  --bg: #f4efe4;
-  --paper: #fffdf8;
-  --paper-alt: #f7f1e4;
+  --bg: #fbf6ea;
+  --paper: #fffefb;
+  --paper-alt: #fdf6e8;
   --text: #0f0f0f;
   --muted: #4a463f;
   --border: #d7cfc0;
@@ -14,9 +14,9 @@
   --link-hover: #000000;
 
   /* Typography */
-  --font-heading: "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif;
-  --font-body: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
-  --font-ui: "Inter", "Segoe UI", Arial, sans-serif;
+  --font-heading: "Proxima Nova", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Proxima Nova", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-ui: "Proxima Nova", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
   --text-xs: 0.82rem;
   --text-sm: 0.93rem;

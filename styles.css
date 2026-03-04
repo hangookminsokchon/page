@@ -668,3 +668,141 @@ button:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* -------- Reference-Style Flattening Pass -------- */
+.sidebar-inner {
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: var(--sp-2);
+}
+
+.main-nav {
+  padding-top: var(--sp-3);
+  margin-top: var(--sp-1);
+}
+
+.sidebar-links {
+  justify-self: start;
+  margin-top: var(--sp-2);
+}
+
+.site-main {
+  gap: 0;
+}
+
+.panel {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.site-main > .panel + .panel {
+  border-top: 1px solid var(--border);
+}
+
+.page-hero {
+  padding: var(--sp-5) 0 var(--sp-4);
+}
+
+.page-hero::after {
+  left: 0;
+  right: 0;
+}
+
+.section {
+  padding: var(--sp-5) 0;
+}
+
+.profile-card,
+.research-card {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.project-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) 1fr;
+  gap: var(--sp-4);
+  align-items: start;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  padding: var(--sp-4) 0;
+}
+
+.project-grid .project-card:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.project-card:hover {
+  border-color: var(--border);
+  transform: none;
+}
+
+.project-icon {
+  height: 132px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.project-body {
+  padding: 0;
+}
+
+.honors-card {
+  border: 0;
+  border-left: 2px solid color-mix(in srgb, var(--accent) 20%, var(--border));
+  border-radius: 0;
+  background: transparent;
+  padding: 0 0 0 var(--sp-4);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-4) 0 var(--sp-6);
+  border-top: 1px solid var(--border);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .theme-toggle {
+  justify-self: auto;
+}
+
+@media (max-width: 900px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-icon {
+    width: min(280px, 100%);
+  }
+}
+
+@media (max-width: 680px) {
+  .page-hero,
+  .section,
+  .project-hero-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

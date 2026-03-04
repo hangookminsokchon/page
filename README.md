@@ -14,7 +14,7 @@ Static multi-page CV site that runs without a backend.
 ## Assets used
 - Profile image: `image/profilepic.jpeg`
 - SASHIMI banner: `image/SASHIMI_banner.png`
-- Resume: `figures/Yoolkyu_Park_Resume_30 (5).pdf`
+- Resume: `figures/Yoolkyu_Park_CV_2026_Mar.pdf`
 - Poster: `figures/ISBA_SASHIMI_Yoolkyu_Park.pdf`
 
 ## Run locally
